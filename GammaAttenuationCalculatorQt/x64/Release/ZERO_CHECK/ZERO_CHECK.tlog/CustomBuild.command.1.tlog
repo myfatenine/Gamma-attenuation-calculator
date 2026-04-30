@@ -1,0 +1,10 @@
+^C:\USERS\MYFATENINE\SOURCE\REPOS\GAMMA ATTENUATION CALCULATOR\GAMMA ATTENUATION CALCULATOR\BUILD\CMAKEFILES\12867E5DD3B69DC00D2F85B986A7D95A\GENERATE.STAMP.RULE
+setlocal
+D:\G4\cmake\bin\cmake.exe "-SC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator" "-BC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/GammaAttenuationCalculatorQt.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

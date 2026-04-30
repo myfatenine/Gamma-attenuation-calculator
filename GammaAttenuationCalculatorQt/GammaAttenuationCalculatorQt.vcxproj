@@ -1,0 +1,462 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{38F1D9D7-6E3F-31FE-ADE9-63C401F56DE7}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>x64</Platform>
+    <ProjectName>GammaAttenuationCalculatorQt</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GammaAttenuationCalculatorQt.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">GammaAttenuationCalculatorQt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GammaAttenuationCalculatorQt.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">GammaAttenuationCalculatorQt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GammaAttenuationCalculatorQt.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">GammaAttenuationCalculatorQt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GammaAttenuationCalculatorQt.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">GammaAttenuationCalculatorQt</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_Debug;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_Debug;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_Debug;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target GammaAttenuationCalculatorQt</Message>
+      <Command>setlocal
+cd "C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+D:\G4\cmake\bin\cmake.exe -E cmake_autogen "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/GammaAttenuationCalculatorQt_autogen.dir/AutogenInfo.json" Debug
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\G4\cmake\bin\cmake.exe -E copy_if_different "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/data.csv" "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/Debug/data.csv"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Widgetsd.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Guid.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Cored.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/Debug/GammaAttenuationCalculatorQt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/Debug/GammaAttenuationCalculatorQt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_Release;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_Release;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_Release;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target GammaAttenuationCalculatorQt</Message>
+      <Command>setlocal
+cd "C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+D:\G4\cmake\bin\cmake.exe -E cmake_autogen "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/GammaAttenuationCalculatorQt_autogen.dir/AutogenInfo.json" Release
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\G4\cmake\bin\cmake.exe -E copy_if_different "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/data.csv" "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/Release/data.csv"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/Release/GammaAttenuationCalculatorQt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/Release/GammaAttenuationCalculatorQt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_MinSizeRel;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_MinSizeRel;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_MinSizeRel;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target GammaAttenuationCalculatorQt</Message>
+      <Command>setlocal
+cd "C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+D:\G4\cmake\bin\cmake.exe -E cmake_autogen "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/GammaAttenuationCalculatorQt_autogen.dir/AutogenInfo.json" MinSizeRel
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\G4\cmake\bin\cmake.exe -E copy_if_different "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/data.csv" "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/MinSizeRel/data.csv"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/MinSizeRel/GammaAttenuationCalculatorQt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/MinSizeRel/GammaAttenuationCalculatorQt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_RelWithDebInfo;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /utf-8</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;QT_WIDGETS_LIB;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_RelWithDebInfo;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\include_RelWithDebInfo;D:\G4\QT5\5.15.2\msvc2019_64\include;D:\G4\QT5\5.15.2\msvc2019_64\include\QtWidgets;D:\G4\QT5\5.15.2\msvc2019_64\include\QtGui;D:\G4\QT5\5.15.2\msvc2019_64\include\QtANGLE;D:\G4\QT5\5.15.2\msvc2019_64\include\QtCore;D:\G4\QT5\5.15.2\msvc2019_64\.\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <PreBuildEvent>
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message>Automatic MOC for target GammaAttenuationCalculatorQt</Message>
+      <Command>setlocal
+cd "C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build"
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+D:\G4\cmake\bin\cmake.exe -E cmake_autogen "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/GammaAttenuationCalculatorQt_autogen.dir/AutogenInfo.json" RelWithDebInfo
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Message></Message>
+      <Command>setlocal
+D:\G4\cmake\bin\cmake.exe -E copy_if_different "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/data.csv" "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/RelWithDebInfo/data.csv"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Widgets.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Gui.lib;D:\G4\QT5\5.15.2\msvc2019_64\lib\Qt5Core.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/RelWithDebInfo/GammaAttenuationCalculatorQt.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/RelWithDebInfo/GammaAttenuationCalculatorQt.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+D:\G4\cmake\bin\cmake.exe "-SC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator" "-BC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build" --check-stamp-file "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\data.csv;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+D:\G4\cmake\bin\cmake.exe "-SC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator" "-BC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build" --check-stamp-file "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\data.csv;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+D:\G4\cmake\bin\cmake.exe "-SC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator" "-BC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build" --check-stamp-file "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\data.csv;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+D:\G4\cmake\bin\cmake.exe "-SC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator" "-BC:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build" --check-stamp-file "C:/Users/myfatenine/source/repos/Gamma attenuation calculator/Gamma attenuation calculator/build/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeCXXCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeRCCompiler.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\3.21.0\CMakeSystem.cmake;C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\data.csv;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5Config.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5\Qt5ModuleLocation.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigExtrasMkspecDir.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Core\Qt5CoreMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5GuiConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QGifPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICNSPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QICOPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QJpegPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QMinimalIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QOffscreenIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgIconPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QSvgPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTgaPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTiffPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QTuioTouchPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWbmpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWebpPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QWindowsIntegrationPlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Gui\Qt5Gui_QXdgDesktopPortalThemePlugin.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfig.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigExtras.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsConfigVersion.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5WidgetsMacros.cmake;D:\G4\QT5\5.15.2\msvc2019_64\lib\cmake\Qt5Widgets\Qt5Widgets_QWindowsVistaStylePlugin.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCXXInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeCommonLanguageInclude.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeGenericSystem.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeInitializeConfigs.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeLanguageInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeParseArguments.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeRCInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInformation.cmake;D:\G4\cmake\share\cmake-3.21\Modules\CMakeSystemSpecificInitialize.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\CMakeCommonCompilerMacros.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Compiler\MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC-CXX.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows-MSVC.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\Windows.cmake;D:\G4\cmake\share\cmake-3.21\Modules\Platform\WindowsPaths.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\mocs_compilation_Debug.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\main.cpp" />
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\MainWindow.cpp" />
+    <ClInclude Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\MainWindow.h" />
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\AttenuationCalculator.cpp" />
+    <ClInclude Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\AttenuationCalculator.h" />
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\mocs_compilation_Release.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\mocs_compilation_MinSizeRel.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\GammaAttenuationCalculatorQt_autogen\mocs_compilation_RelWithDebInfo.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</ExcludedFromBuild>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\myfatenine\source\repos\Gamma attenuation calculator\Gamma attenuation calculator\build\ZERO_CHECK.vcxproj">
+      <Project>{924D44F1-4297-3D9C-B798-E7C95DF6423F}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
