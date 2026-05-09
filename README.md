@@ -9,9 +9,11 @@ The project was migrated from the original C# WinForms version to a C++/Qt imple
 - Single-element gamma-ray attenuation calculation.
 - Mixture calculation from molecular formulas, such as `H2O`, `CaCO3`, and `Fe2(SO4)3`.
 - Manual mixture calculation by element symbol or atomic number and mass percentage.
+- NIST calculation group using the bundled NIST gamma attenuation database, including single-element, molecular-formula mixture, manual percentage mixture, and standard-material lookup modes.
 - Chinese and English interface switching.
 - Attenuation curve drawing up to 99% attenuation.
 - Half-value layer and 95% attenuation thickness markers.
+- Current-thickness attenuation rate calculation.
 - CSV export for calculated attenuation curves.
 - Windows desktop build and Android arm64-v8a APK build support.
 
@@ -21,6 +23,11 @@ This program refers to the method and data treatment described in:
 
 https://doi.org/10.1140/epjd/e2017-70679-7
 
+The NIST standard-material lookup is based on the bundled `NISTElementsGammaAttenuation.db` database from the local reference project `NISTGammaSearch-master`, whose upstream data are from NIST XCOM:
+
+https://github.com/JW1992/NISTGammaSearch
+https://www.nist.gov/pml/xcom-photon-cross-sections-database
+
 If this project infringes your rights or interests, please contact the maintainer for removal or correction.
 
 ## Requirements
@@ -28,12 +35,14 @@ If this project infringes your rights or interests, please contact the maintaine
 ### Windows
 
 - Qt 6.11.0 or compatible Qt Widgets kit.
+- Qt Sql module with SQLite driver.
 - CMake 3.16 or newer.
 - A supported C++17 compiler.
 
 ### Android
 
 - Qt 6.11.0 Android `arm64-v8a` kit.
+- Qt Sql module with SQLite driver.
 - Android SDK platform 36.
 - Android NDK r27c, for example `27.2.12479018`.
 - JDK 17.
@@ -79,7 +88,20 @@ On Windows, if Qt Android automoc or Ninja stalls in a long path or a path conta
 
 ## Data File
 
-`data.csv` contains the fitted attenuation coefficient parameters used by the calculator. Desktop builds copy this file next to the executable. Android builds embed it through `resources.qrc`, so the APK does not need an external data file.
+`data.csv` contains the fitted attenuation coefficient parameters used by the original calculator modes. `NISTElementsGammaAttenuation.db` contains the NIST material attenuation tables used by the NIST tab. Android builds embed both files through `resources.qrc`, so the APK does not need external data files.
+
+## Updating The NIST Database
+
+The NIST tab reads `NISTElementsGammaAttenuation.db`, which is bundled as a Qt resource through `resources.qrc`. To update the NIST attenuation data:
+
+1. Replace `NISTElementsGammaAttenuation.db` in the source directory with the updated SQLite database.
+2. Keep the table layout compatible with the current reader:
+   - `elements`: must contain `atom_number`, `name`, `symbol`, and `density`.
+   - `materials`: must contain `name` and `density`.
+   - Each element or material table must contain `energy` in MeV and `attencoeff` in `cm^2/g`.
+3. Rebuild the desktop executable or Android APK.
+
+On Android, the embedded database is copied to the application data directory before opening. At startup, the app compares the embedded database with the copied database and refreshes the copied file automatically when the bundled database changes.
 
 ## Source Layout
 
@@ -89,7 +111,9 @@ main.cpp
 MainWindow.h / MainWindow.cpp
 AttenuationCalculator.h / AttenuationCalculator.cpp
 AttenuationPlot.h / AttenuationPlot.cpp
+NistDatabase.h / NistDatabase.cpp
 data.csv
+NISTElementsGammaAttenuation.db
 resources.qrc
 android/
 build_android_arm64.ps1
